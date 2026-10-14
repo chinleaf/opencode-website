@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+    </header>
+
+    <main>
+      <section aria-labelledby="intro-heading">
+        <h2 id="intro-heading" class="visually-hidden">Introduction</h2>
+        <p class="intro">
+          I'm building accessible, practical web projects. This portfolio showcases
+          selected work and core skills for hiring managers and classmates.
+        </p>
+      </section>
+
+      <section aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="filters" role="group" aria-label="Filter projects by tag">
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">
+            All
+          </button>
+          <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">
+            Web
+          </button>
+          <button type="button" class="filter-btn" data-filter="tool" aria-pressed="false">
+            Tool
+          </button>
+          <button type="button" class="filter-btn" data-filter="game" aria-pressed="false">
+            Game
+          </button>
+        </div>
+        <ul class="projects">
+          <li class="project-card" data-tags="web">
+            <h3>Accessible Portfolio</h3>
+            <p>A responsive one-page site with semantic HTML, keyboard navigation, and simple filtering.</p>
+            <span class="tag">Web</span>
+          </li>
+          <li class="project-card" data-tags="tool">
+            <h3>Task Timer</h3>
+            <p>A lightweight timer for focused work sessions; built with vanilla JS and clear UI.</p>
+            <span class="tag">Tool</span>
+          </li>
+          <li class="project-card" data-tags="game">
+            <h3>Memory Match</h3>
+            <p>A small browser game that tests recall with accessible controls and readable feedback.</p>
+            <span class="tag">Game</span>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <ul class="skills">
+          <li>HTML, CSS, JavaScript</li>
+          <li>Responsive, accessible UI</li>
+          <li>Problem-solving &amp; collaboration</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
